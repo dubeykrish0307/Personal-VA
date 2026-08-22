@@ -1,0 +1,52 @@
+=== SEVRIN session log ===
+started : 2026-08-22T12:02:42.480Z
+file    : Test 11.log
+========================================
+[12:02:42.480] [ui] logging this session to logs/Test 11.log
+[12:02:42.518] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[12:02:42.765] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[12:02:42.765]   import pkg_resources
+[12:02:44.313] [proactive] queue running
+[12:02:44.325] [backend] websocket server on ws://localhost:8765
+[12:02:44.325] [backend] loading whisper model...
+[12:02:45.022] [backend] measuring room noise (stay quiet for a second)...
+[12:02:46.607] [audio_gate] room noise floor: -51.8 dBFS
+[12:02:47.836] [wake_word] loading openWakeWord model (downloads once on first run)...
+[12:02:48.106] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[12:02:48.301] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[12:02:48.301] [wake_word] voiceprint: 44 clips, genuine mean 0.677, threshold 0.478
+[12:02:48.301] [wake_word] listening for "hey jarvis" (your voice only)
+[12:02:50.238] [wake_word] voice confirmed (0.57 >= 0.38)
+[12:02:50.346] [backend] wake triggered by 'hey jarvis'
+[12:02:50.347] [backend] listening for your command...
+[12:02:56.469] [listener] speaker confirmed (voice 0.67 >= 0.38)
+[12:02:57.003] [backend] you said: Can you remind me in 30 seconds I have a work to do?
+[12:02:57.003] [reminders] scheduled in 30s: I have a work to do
+[12:02:57.003] [sevrin] Noted — I have a work to do, in 30 seconds.
+[12:02:57.702] [2K
+[12:03:00.473] [backend] listening for your command...
+[12:03:07.417] [listener] ignored non-speech audio: not loud enough above room noise (band 0.262, flat 0.002)
+[12:03:07.417] [backend] heard nothing usable — back to wake-word listening
+[12:03:27.487] [proactive] queued <reminder:critical 'the reminder he asked for: I have a work'>
+[12:03:27.493] [proactive] speaking: <reminder:critical 'the reminder he asked for: I have a work'> (critical, and he's free)
+[12:03:28.937] [sevrin, unprompted] You've got that work waiting.
+[12:03:29.265] [2K
+[12:03:40.854] [wake_word] voice confirmed (0.58 >= 0.38)
+[12:03:40.963] [backend] wake triggered by 'hey jarvis'
+[12:03:40.963] [backend] listening for your command...
+[12:03:49.037] [listener] speaker confirmed (voice 0.64 >= 0.38)
+[12:03:49.588] [backend] you said: Can you remind me in 24 seconds that I have to take my burger from the oven?
+[12:03:49.588] [reminders] scheduled in 24s: I have to take my burger from the oven
+[12:03:49.588] [sevrin] Noted — I have to take my burger from the oven, in 24 seconds.
+[12:03:49.933] [2K
+[12:03:53.448] [backend] listening for your command...
+[12:04:00.377] [listener] ignored non-speech audio: not loud enough above room noise (band 0.33, flat 0.008)
+[12:04:00.378] [backend] heard nothing usable — back to wake-word listening
+[12:04:13.667] [proactive] queued <reminder:critical 'the reminder he asked for: I have to tak'>
+[12:04:14.126] [proactive] speaking: <reminder:critical 'the reminder he asked for: I have to tak'> (critical, and he's free)
+[12:04:14.985] [sevrin, unprompted] Your burger's ready.
+[12:04:15.275] [2K
+[12:04:25.456] [ui] stopping backend
+[12:04:25.482] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T12:04:25.482Z ===
