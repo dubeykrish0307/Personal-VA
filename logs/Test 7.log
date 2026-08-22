@@ -1,0 +1,38 @@
+=== SEVRIN session log ===
+started : 2026-08-22T11:00:43.477Z
+file    : Test 7.log
+========================================
+[11:00:43.477] [ui] logging this session to logs/Test 7.log
+[11:00:43.521] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[11:00:43.840] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[11:00:43.840]   import pkg_resources
+[11:00:45.675] [backend] websocket server on ws://localhost:8765
+[11:00:45.675] [backend] loading whisper model...
+[11:00:46.557] [backend] measuring room noise (stay quiet for a second)...
+[11:00:48.098] [audio_gate] room noise floor: -55.2 dBFS
+[11:00:49.402] [wake_word] loading openWakeWord model (downloads once on first run)...
+[11:00:49.689] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[11:00:49.886] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[11:00:49.886] [wake_word] voiceprint: 10 clips, genuine mean 0.641, threshold 0.502
+[11:00:49.886] [wake_word] listening for "hey jarvis" (your voice only)
+[11:00:56.185] [wake_word] voice confirmed (0.46 >= 0.35)
+[11:00:56.295] [backend] wake triggered by 'hey jarvis'
+[11:00:56.296] [backend] listening for your command...
+[11:01:02.069] [listener] speaker confirmed (voice 0.46 >= 0.35)
+[11:01:02.554] [backend] you said: I'll let you.
+[11:01:02.554] [sevrin] 
+[11:01:03.528] I'm ready, Krish. 
+[11:01:03.535] What would you like?
+[11:01:03.536]  
+[11:01:04.112] [2K
+[11:01:05.853] [2K
+[11:01:07.324] [backend] listening for your command...
+[11:01:09.222] [backend] heard nothing usable — back to wake-word listening
+[11:01:09.461] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[11:01:10.500] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[11:01:11.540] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[11:01:12.582] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[11:01:18.004] [ui] stopping backend
+[11:01:18.055] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T11:01:18.055Z ===

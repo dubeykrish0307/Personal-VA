@@ -1,0 +1,102 @@
+=== SEVRIN session log ===
+started : 2026-08-22T11:13:49.370Z
+file    : Test 9.log
+========================================
+[11:13:49.371] [ui] logging this session to logs/Test 9.log
+[11:13:49.419] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[11:13:49.800] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[11:13:49.800]   import pkg_resources
+[11:13:51.638] [backend] websocket server on ws://localhost:8765
+[11:13:51.638] [backend] loading whisper model...
+[11:13:52.306] [backend] measuring room noise (stay quiet for a second)...
+[11:13:53.897] [audio_gate] room noise floor: -54.3 dBFS
+[11:13:55.177] [wake_word] loading openWakeWord model (downloads once on first run)...
+[11:13:55.474] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[11:13:55.668] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[11:13:55.668] [wake_word] voiceprint: 44 clips, genuine mean 0.677, threshold 0.478
+[11:13:55.668] [wake_word] listening for "hey jarvis" (your voice only)
+[11:13:58.361] [wake_word] voice confirmed (0.60 >= 0.38)
+[11:13:58.471] [backend] wake triggered by 'hey jarvis'
+[11:13:58.471] [backend] listening for your command...
+[11:14:01.296] [listener] speaker confirmed (voice 0.64 >= 0.38)
+[11:14:01.817] [backend] you said: How are you, brother?
+[11:14:01.817] [sevrin] 
+[11:14:03.656] I'm running well. 
+[11:14:03.670] More to the point — what do you need? 
+[11:14:04.438] [2K
+[11:14:06.308] [2K
+[11:14:08.736] [backend] listening for your command...
+[11:14:13.080] [listener] speaker confirmed (voice 0.68 >= 0.38)
+[11:14:13.608] [backend] you said: What do you know about me?
+[11:14:13.608] [sevrin] 
+[11:14:14.707] You're Krish. 
+[11:14:14.953] You work with systems and code — you think in architecture and you're precise about it. You don't waste time on pleasantries, which I appreciate. 
+[11:14:14.975] [2K
+[11:14:15.318] You test people, including me, to see if they're actually paying attention or just performing competence. 
+[11:14:15.628] Beyond that, I'm waiting for you to tell me things. 
+[11:14:15.792] I can retain what you share across our conversations, but I'm not carrying much forward yet — we're still new to each other. 
+[11:14:16.565] [2K
+[11:14:20.928] [backend] listening for your command...
+[11:14:22.608] [2K
+[11:14:23.997] [listener] ignored: not Krish (voice -0.04, need 0.38)
+[11:14:23.997] [backend] heard nothing usable — back to wake-word listening
+[11:14:27.912] [2K
+[11:14:30.963] [2K
+[11:14:52.213] [wake_word] voice confirmed (0.39 >= 0.38)
+[11:14:52.320] [backend] wake triggered by 'hey jarvis'
+[11:14:52.320] [backend] listening for your command...
+[11:14:58.791] [listener] speaker confirmed (voice 0.63 >= 0.38)
+[11:14:59.320] [backend] you said: What do you know about me in short? Can you do?
+[11:14:59.320] [sevrin] 
+[11:15:00.189] Not much yet. You're direct, you value efficiency, you test competence. 
+[11:15:00.201] That's the working picture so far. 
+[11:15:00.488] [2K
+[11:15:04.104] [barge_in] interruption from Krish (voice 0.51 >= 0.38)
+[11:15:04.211] [interrupt] cut off after: ''...
+[11:15:09.790] [listener] ignored: not Krish (voice 0.38, need 0.38)
+[11:15:09.790] [interrupt] he said: (stopped you, said nothing further)
+[11:15:09.790] [sevrin] 
+[11:15:10.622] Right. 
+[11:15:10.625] What is it? 
+[11:15:10.870] [2K
+[11:15:12.023] [2K
+[11:15:13.333] [backend] listening for your command...
+[11:15:18.447] [listener] speaker confirmed (voice 0.81 >= 0.38)
+[11:15:18.975] [backend] you said: Do you know what he was saying like the last thing?
+[11:15:18.976] [sevrin] 
+[11:15:20.186] No — you stopped me before I finished. 
+[11:15:20.331] I was about to say something about not having enough context to build a fuller picture yet, but it wasn't essential. 
+[11:15:20.339] What's on your mind? 
+[11:15:20.444] [2K
+[11:15:22.866] [2K
+[11:15:25.477] [backend] listening for your command...
+[11:15:28.177] [2K
+[11:15:29.925] [backend] heard nothing usable — back to wake-word listening
+[11:15:36.970] [wake_word] voice confirmed (0.60 >= 0.38)
+[11:15:37.079] [backend] wake triggered by 'hey jarvis'
+[11:15:37.079] [backend] listening for your command...
+[11:15:45.483] [listener] ignored: not Krish (voice -0.03, need 0.38)
+[11:15:45.483] [backend] heard nothing usable — back to wake-word listening
+[11:15:48.390] [wake_word] voice confirmed (0.56 >= 0.38)
+[11:15:48.500] [backend] wake triggered by 'hey jarvis'
+[11:15:48.500] [backend] listening for your command...
+[11:15:52.025] [listener] speaker confirmed (voice 0.53 >= 0.38)
+[11:15:52.509] [backend] you said: How are you doing brother?
+[11:15:52.509] [sevrin] 
+[11:15:57.728] I'm fine. 
+[11:15:57.784] What's the matter? 
+[11:15:58.000] [2K
+[11:15:59.428] [2K
+[11:16:00.884] [backend] listening for your command...
+[11:16:07.554] [listener] speaker confirmed (voice 0.71 >= 0.38)
+[11:16:08.058] [backend] you said: nothing not a matter of just I was just asking you
+[11:16:08.058] [sevrin] 
+[11:16:08.914] Fair enough. 
+[11:16:08.921] I'm doing well, then. 
+[11:16:09.169] [2K
+[11:16:10.641] [2K
+[11:16:12.204] [backend] listening for your command...
+[11:16:16.092] [ui] stopping backend
+[11:16:16.137] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T11:16:16.137Z ===

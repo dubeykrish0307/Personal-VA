@@ -1,0 +1,36 @@
+=== SEVRIN session log ===
+started : 2026-08-22T11:09:02.644Z
+file    : Test 8.log
+========================================
+[11:09:02.646] [ui] logging this session to logs/Test 8.log
+[11:09:02.691] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[11:09:03.093] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[11:09:03.093]   import pkg_resources
+[11:09:05.039] [backend] websocket server on ws://localhost:8765
+[11:09:05.039] [backend] loading whisper model...
+[11:09:05.799] [backend] measuring room noise (stay quiet for a second)...
+[11:09:07.378] [audio_gate] room noise floor: -57.4 dBFS
+[11:09:08.744] [wake_word] loading openWakeWord model (downloads once on first run)...
+[11:09:09.038] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[11:09:09.240] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[11:09:09.240] [wake_word] voiceprint: 44 clips, genuine mean 0.677, threshold 0.478
+[11:09:09.240] [wake_word] listening for "hey jarvis" (your voice only)
+[11:09:11.208] [wake_word] voice confirmed (0.43 >= 0.38)
+[11:09:11.318] [backend] wake triggered by 'hey jarvis'
+[11:09:11.318] [backend] listening for your command...
+[11:09:13.960] [listener] ignored: not Krish (voice 0.13, need 0.38)
+[11:09:13.960] [backend] heard nothing usable — back to wake-word listening
+[11:09:17.892] [wake_word] voice confirmed (0.45 >= 0.38)
+[11:09:18.001] [backend] wake triggered by 'hey jarvis'
+[11:09:18.001] [backend] listening for your command...
+[11:09:20.401] [listener] ignored: not Krish (voice 0.13, need 0.38)
+[11:09:20.401] [backend] heard nothing usable — back to wake-word listening
+[11:09:24.440] [wake_word] voice confirmed (0.59 >= 0.38)
+[11:09:24.550] [backend] wake triggered by 'hey jarvis'
+[11:09:24.551] [backend] listening for your command...
+[11:09:27.934] [listener] ignored: not Krish (voice 0.34, need 0.38)
+[11:09:27.935] [backend] heard nothing usable — back to wake-word listening
+[11:09:32.667] [ui] stopping backend
+[11:09:32.713] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T11:09:32.713Z ===

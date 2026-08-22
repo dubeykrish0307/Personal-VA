@@ -1,0 +1,72 @@
+=== SEVRIN session log ===
+started : 2026-08-22T10:39:50.375Z
+file    : Test 4.log
+========================================
+[10:39:50.376] [ui] logging this session to logs/Test 4.log
+[10:39:50.400] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[10:39:50.762] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[10:39:50.762]   import pkg_resources
+[10:39:52.531] [backend] websocket server on ws://localhost:8765
+[10:39:52.532] [backend] loading whisper model...
+[10:39:53.132] [backend] measuring room noise (stay quiet for a second)...
+[10:39:54.738] [audio_gate] calibration read silence (-89 dBFS) — mic wasn't ready; assuming a quiet room (floor 0.0015)
+[10:39:56.073] [wake_word] loading openWakeWord model (downloads once on first run)...
+[10:39:56.357] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[10:39:56.555] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[10:39:56.555] [wake_word] voiceprint: 10 clips, genuine mean 0.641, threshold 0.502
+[10:39:56.555] [wake_word] listening for "hey jarvis" (your voice only)
+[10:39:58.911] [wake_word] voice confirmed (0.64 >= 0.35)
+[10:39:59.043] [backend] wake triggered by 'hey jarvis'
+[10:39:59.043] [backend] listening for your command...
+[10:40:02.075] [listener] speaker confirmed (voice 0.57 >= 0.35)
+[10:40:02.541] [backend] you said: How are you?
+[10:40:02.541] [sevrin] 
+[10:40:03.591] I'm working properly, Krish. 
+[10:40:03.602] What've you got for me? 
+[10:40:04.207] [2K
+[10:40:06.273] [2K
+[10:40:07.931] [backend] listening for your command...
+[10:40:11.138] [listener] speaker confirmed (voice 0.65 >= 0.35)
+[10:40:11.599] [backend] you said: What's my name?
+[10:40:11.599] [sevrin] 
+[10:40:12.395] Krish. 
+[10:40:12.557] That's what you've told me, and that's what I'm calling you. 
+[10:40:12.648] [2K
+[10:40:14.024] [2K
+[10:40:16.704] [backend] listening for your command...
+[10:40:19.521] [listener] speaker confirmed (voice 0.57 >= 0.35)
+[10:40:19.984] [backend] you said: and what's your name?
+[10:40:19.984] [sevrin] 
+[10:40:20.704] SEVRIN. 
+[10:40:20.942] [2K
+[10:40:20.950] Self-Evolving Verified Reasoning Intelligence Nexus. 
+[10:40:21.029] Though in practice you'll just call me by it, or not at all. 
+[10:40:22.287] [2K
+[10:40:26.198] [2K
+[10:40:26.205] [backend] listening for your command...
+[10:40:36.674] [listener] speaker confirmed (voice 0.64 >= 0.35)
+[10:40:37.222] [backend] you said: Let's go, let's go. And can I also interrupt you while speaking?
+[10:40:37.222] [sevrin] 
+[10:40:38.127] Yes. 
+[10:40:38.234] I'll stop mid-sentence and listen to what you've actually got to say. 
+[10:40:38.245] No fuss about it. 
+[10:40:38.364] [2K
+[10:40:39.541] [2K
+[10:40:39.720] [barge_in] interruption from Krish (voice 0.55 >= 0.35)
+[10:40:39.839] [interrupt] cut off after: 'Yes.'...
+[10:40:43.798] [listener] speaker confirmed (voice 0.55 >= 0.35)
+[10:40:44.295] [interrupt] he said: Yeah, uh... one thing, how are you?
+[10:40:44.295] [sevrin] 
+[10:40:45.044] I'm ready. 
+[10:40:45.050] What do you need? 
+[10:40:45.298] [2K
+[10:40:46.636] [2K
+[10:40:47.975] [backend] listening for your command...
+[10:40:52.704] [listener] ignored non-speech audio: energy outside speech band (rumble/fan) (band 0.254, flat 0.002)
+[10:40:52.704] [backend] heard nothing usable — back to wake-word listening
+[10:40:52.921] [wake_word] heard "hey jarvis" but audio gate rejected it: below absolute silence floor (-123.5dB above floor, band 0.0, flat 1.0)
+[10:40:53.557] [wake_word] heard "hey jarvis" but audio gate rejected it: below absolute silence floor (-123.5dB above floor, band 0.0, flat 1.0)
+[10:41:05.743] [ui] stopping backend
+[10:41:05.796] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T10:41:05.796Z ===

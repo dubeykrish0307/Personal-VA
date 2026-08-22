@@ -1,0 +1,30 @@
+=== SEVRIN session log ===
+started : 2026-08-22T10:59:05.415Z
+file    : Test 6.log
+========================================
+[10:59:05.416] [ui] logging this session to logs/Test 6.log
+[10:59:05.465] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[10:59:05.846] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[10:59:05.846]   import pkg_resources
+[10:59:07.817] [backend] websocket server on ws://localhost:8765
+[10:59:07.817] [backend] loading whisper model...
+[10:59:08.668] [backend] measuring room noise (stay quiet for a second)...
+[10:59:10.248] [audio_gate] room noise floor: -53.4 dBFS
+[10:59:11.554] [wake_word] loading openWakeWord model (downloads once on first run)...
+[10:59:11.850] [voice_id] loading ECAPA-TDNN speaker model (one-time download ~80MB)...
+[10:59:12.047] [voice_id] using ECAPA-TDNN (EER ~0.8% on VoxCeleb)
+[10:59:12.047] [wake_word] voiceprint: 10 clips, genuine mean 0.641, threshold 0.502
+[10:59:12.047] [wake_word] listening for "hey jarvis" (your voice only)
+[10:59:14.418] [wake_word] voice confirmed (0.37 >= 0.35)
+[10:59:14.529] [backend] wake triggered by 'hey jarvis'
+[10:59:14.529] [backend] listening for your command...
+[10:59:17.942] [listener] ignored: not Krish (voice 0.33, need 0.35)
+[10:59:17.942] [backend] heard nothing usable — back to wake-word listening
+[10:59:18.159] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[10:59:19.196] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[10:59:20.237] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[10:59:21.276] [wake_word] heard "hey jarvis" but clip was too short to verify — ignoring
+[10:59:27.521] [ui] stopping backend
+[10:59:27.565] [ui] backend exited (code null)
+
+=== session ended 2026-08-22T10:59:27.565Z ===

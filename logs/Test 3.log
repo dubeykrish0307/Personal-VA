@@ -1,0 +1,16 @@
+=== SEVRIN session log ===
+started : 2026-08-22T10:39:03.403Z
+file    : Test 3.log
+========================================
+[10:39:03.405] [ui] logging this session to logs/Test 3.log
+[10:39:03.405] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[10:39:03.770] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[10:39:03.770]   import pkg_resources
+[10:39:05.526] [backend] PORT 8765 IS ALREADY IN USE.
+[10:39:05.526] [backend] Another SEVRIN backend is still running — probably
+[10:39:05.526] [backend] one started from a terminal earlier. Kill it with:
+[10:39:05.526] [backend]     lsof -ti:8765 | xargs kill -9
+[10:39:05.526] [backend] (the desktop app now does this automatically on start)
+[10:39:05.853] [ui] backend exited (code 0)
+
+=== session ended 2026-08-22T10:39:05.853Z ===

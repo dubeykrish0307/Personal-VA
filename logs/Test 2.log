@@ -1,0 +1,44 @@
+=== SEVRIN session log ===
+started : 2026-08-22T10:35:11.880Z
+file    : Test 2.log
+========================================
+[10:35:11.880] [ui] logging this session to logs/Test 2.log
+[10:35:11.880] [ui] starting backend with /Users/krish/PROJECTS/VA/VA_PWD/venv/bin/python3
+[10:35:12.148] /Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[10:35:12.149]   import pkg_resources
+[10:35:13.390] [backend] loading whisper model...
+[10:35:13.390] [backend] websocket server on ws://localhost:8765
+[10:35:13.403] Traceback (most recent call last):
+[10:35:13.403]   File "/Users/krish/PROJECTS/VA/VA_PWD/backend/service.py", line 372, in <module>
+[10:35:13.403]     asyncio.run(_main())
+[10:35:13.403]   File "/Users/krish/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py", line 190, in run
+[10:35:13.403]     return runner.run(main)
+[10:35:13.403]            ^^^^^^^^^^^^^^^^
+[10:35:13.403]   File "/Users/krish/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py", line 118, in run
+[10:35:13.403]     return self._loop.run_until_complete(task)
+[10:35:13.403]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10:35:13.403]   File "/Users/krish/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+[10:35:13.403]     return future.result()
+[10:35:13.403]            ^
+[10:35:13.403] ^^^^^^^^^^^^^^
+[10:35:13.403]   File "/Users/krish/PROJECTS/VA/VA_PWD/backend/service.py", line 367, in _main
+[10:35:13.403]     async with websockets.serve(_handler, HOST, PORT):
+[10:35:13.403]   File "/Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 462, in __aenter__
+[10:35:13.403]     return await self
+[10:35:13.403]            ^^^^^^^^^^
+[10:35:13.403]   File "/Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 451, in _await
+[10:35:13.403]     self.server = await self.create_server()
+[10:35:13.403]                
+[10:35:13.405]    
+[10:35:13.405] ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10:35:13.405]   File "/Users/krish/PROJECTS/VA/VA_PWD/venv/lib/python3.11/site-packages/websockets/asyncio/server.py", line 672, in create_server
+[10:35:13.405]     return await loop.create_server(protocol_factory, host, port, **kwargs)  # type: ignore[arg-type]
+[10:35:13.405]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10:35:13.405] ^^^^^
+[10:35:13.405] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10:35:13.405]   File "/Users/krish/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_events.py", line 1536, in create_server
+[10:35:13.405]     raise OSError(err.errno, msg) from None
+[10:35:13.405] OSError: [Errno 48] error while attempting to bind on address ('127.0.0.1', 8765): address already in use
+[10:35:13.720] [ui] backend exited (code 1)
+
+=== session ended 2026-08-22T10:35:13.720Z ===
